@@ -44,7 +44,7 @@ public class BookDAO {
                 String genre = resultSet.getString("genre");
                 String status = resultSet.getString("status");
 
-                // Utiliza el constructor de Book con argumentos
+                // constructor
                 Book book = new Book(title, author, genre, status);
                 books.add(book);
             }
@@ -71,7 +71,7 @@ public class BookDAO {
                     String genre = resultSet.getString("genre");
                     String status = resultSet.getString("status");
 
-                    // Utiliza el constructor de Book con argumentos
+                    // constructor 
                     Book book = new Book(bookTitle, author, genre, status);
                     books.add(book);
                 }
@@ -86,12 +86,11 @@ public class BookDAO {
     // Función para actualizar un libro en la bd
     public void updateBook(String currentTitle, String currentAuthor, Book updatedBook) {
         try (Connection connection = DatabaseConnector.connect()) {
-            // Construir la sentencia SQL UPDATE
+            //SQL UPDATE
             String updateQuery = "UPDATE books SET title=?, author=?, genre=?, status=? " +
                     "WHERE title=? AND author=?";
 
             try (PreparedStatement preparedStatement = connection.prepareStatement(updateQuery)) {
-                // Establecer los valores en la sentencia preparada
                 preparedStatement.setString(1, updatedBook.getTitle());
                 preparedStatement.setString(2, updatedBook.getAuthor());
                 preparedStatement.setString(3, updatedBook.getGenre());
@@ -107,6 +106,8 @@ public class BookDAO {
         }
     }
 
+
+    // Función para eliminar un libro de la bd
     public void deleteBook(String title) {
         try (Connection connection = DatabaseConnector.connect();
              PreparedStatement preparedStatement = connection.prepareStatement(DELETE_BOOK)) {

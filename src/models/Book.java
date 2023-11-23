@@ -1,4 +1,3 @@
-// File: src/models/Book.java
 package models;
 
 public class Book {

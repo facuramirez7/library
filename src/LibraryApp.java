@@ -12,6 +12,7 @@ public class LibraryApp {
     private static JTable table;
 
     public static void main(String[] args) {
+        //swing
         SwingUtilities.invokeLater(() -> {
             JFrame frame = new JFrame("Biblioteca App");
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -90,7 +91,7 @@ public class LibraryApp {
                 return; // No continúes con la inserción si algún campo está vacío
             }
 
-            // Usar JComboBox para seleccionar el nuevo estado
+            // JComboBox para seleccionar el nuevo estado
             JComboBox<String> estadoComboBox = new JComboBox<>(estados);
             estadoComboBox.setSelectedItem(currentStatus);
             int result = JOptionPane.showConfirmDialog(null, estadoComboBox, "Editar estado", JOptionPane.OK_CANCEL_OPTION);
