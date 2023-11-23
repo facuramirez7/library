@@ -4,8 +4,10 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class DatabaseConnector {
+    //Path de la base de datos
     private static final String url = "jdbc:sqlite:src/database/library.db";
 
+    //Conexión con la base de datos
     public static Connection connect() {
         Connection conn = null;
         try {
