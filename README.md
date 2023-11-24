@@ -22,7 +22,11 @@ IDE: [![IDEA][IDEA.js]][IDEA-url]
 ## You need to have installed SQLite .jar files
 Run the LibraryApp.java file, and you will see the GUI
 <p>If you click on "Mostrar Libros", it will deploy a table with all the books from the library.db</p>
-<img style="border-radius: 10%x;" src="https://github.com/facuramirez7/library/blob/main/img/test.jpeg?raw=true" width="400" height="400" />
+![Tu imagen](https://github.com/facuramirez7/library/blob/main/img/test.jpeg?raw=true)
+<div align="center">
+  <img src="https://github.com/facuramirez7/library/blob/main/img/test.jpeg?raw=true" alt="Tu imagen" style="border-radius: 10px;">
+</div>
+
 
 <p>If you click on "Insertar Libro", it will open a new window where you can add a new book</p>
 <img style="border-radius: 10%x;" src="https://github.com/facuramirez7/library/blob/main/img/test2.png?raw=true" />
