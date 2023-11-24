@@ -22,19 +22,15 @@ IDE: [![IDEA][IDEA.js]][IDEA-url]
 ## You need to have installed SQLite .jar files
 Run the LibraryApp.java file, and you will see the GUI
 <p>If you click on "Mostrar Libros", it will deploy a table with all the books from the library.db</p>
-<img src="https://github.com/facuramirez7/library/blob/main/img/test.jpeg?raw=true" width="400" height="400" />
+<img style="border-radius: 10%x;" src="https://github.com/facuramirez7/library/blob/main/img/test.jpeg?raw=true" width="400" height="400" />
 
 <p>If you click on "Insertar Libro", it will open a new window where you can add a new book</p>
-<img src="https://github.com/facuramirez7/library/blob/main/img/test2.png?raw=true" />
+<img style="border-radius: 10%x;" src="https://github.com/facuramirez7/library/blob/main/img/test2.png?raw=true" />
 
 <p>Then, if you click on a row, you can update or delete a Book</p>
-<img src="https://github.com/facuramirez7/library/blob/main/img/test3.png?raw=true">
+<img style="border-radius: 10%x;" src="https://github.com/facuramirez7/library/blob/main/img/test3.png?raw=true">
 
-<style>
-img {
-  border-radius: 10px;
-}
-</style>
+
 ## Author
 <b>Facundo Ramirez</b> - <i>Final Project for UCh</i> - <a href="https://www.linkedin.com/in/facundo-ramirez-dev/">LinkedIn</a>
 
